@@ -19,6 +19,8 @@ public class CalculatorApp {
 		System.out.println("Value1 " + calculation.getValue1());
 		System.out.println("Value2 " + calculation.getValue2());
 		
+		System.out.println("Testing pre-commit hook");
+		
 	}
 
 }
