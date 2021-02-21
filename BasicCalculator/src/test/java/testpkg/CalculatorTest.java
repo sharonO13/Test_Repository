@@ -5,11 +5,14 @@ package testpkg;
 
 import static org.junit.Assert.*;
 
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import calculatorpkg.Calculator;
 
 /**
  * @author Sharon
@@ -17,6 +20,7 @@ import org.junit.Test;
  */
 public class CalculatorTest {
 
+	Calculator Calculation;
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -36,6 +40,8 @@ public class CalculatorTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		
+		Calculation = new Calculator(50,10);
 	}
 
 	/**
@@ -50,7 +56,8 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testGetValue1() {
-		fail("Not yet implemented"); // TODO
+		int num = Calculation.getValue1();
+		assertEquals(num,50);		
 	}
 
 	/**
@@ -58,7 +65,9 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testSetValue1() {
-		fail("Not yet implemented"); // TODO
+		Calculation.setValue1(20);
+		int num = Calculation.getValue1();
+		assertEquals(num,20);
 	}
 
 	/**
@@ -66,7 +75,8 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testGetValue2() {
-		fail("Not yet implemented"); // TODO
+		int num = Calculation.getValue2();
+		assertEquals(num,10);
 	}
 
 	/**
@@ -74,7 +84,9 @@ public class CalculatorTest {
 	 */
 	@Test
 	public void testSetValue2() {
-		fail("Not yet implemented"); // TODO
+		Calculation.setValue1(10);
+		int num = Calculation.getValue1();
+		assertEquals(num,10);
 	}
 
 }
