@@ -23,6 +23,8 @@ public class CalculatorApp {
 		
 		System.out.println("Addition " + calculation.addition());
 		
+		System.out.println("Complete a pull request");
+		
 	}
 
 }
