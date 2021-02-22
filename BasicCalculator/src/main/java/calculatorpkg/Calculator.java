@@ -50,13 +50,23 @@ public class Calculator {
 		this.value2 = value2;
 	}
 	
+	/**
+	 * adds two values together
+	 */	
 	public int addition() {
 		
 		return value1 + value2;
 		
 	}
 	
-	
-	
+	/**
+	 * subtracts two numbers
+	 */		
+	public int subtraction() {
+		
+		return value1 - value2;
+		
+	}
+		
 
 }
