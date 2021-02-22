@@ -86,7 +86,7 @@ public class CalculatorTest {
 	public void testSetValue2() {
 		Calculation.setValue1(10);
 		int num = Calculation.getValue1();
-		assertEquals(num,50);
+		assertEquals(num,10);
 	}
 
 }

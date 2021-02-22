@@ -50,6 +50,12 @@ public class Calculator {
 		this.value2 = value2;
 	}
 	
+	public int addition() {
+		
+		return value1 + value2;
+		
+	}
+	
 	
 	
 
